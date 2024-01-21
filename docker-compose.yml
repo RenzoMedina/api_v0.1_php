@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  laravelapp:
+    container_name: laravelapi
+    image: renzomedina/laravelapi:1.0
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
